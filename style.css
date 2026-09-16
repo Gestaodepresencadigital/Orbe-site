@@ -99,3 +99,28 @@ h1 span,h2 span{color:var(--orange)}
 @media(max-width:900px){.menu{gap:14px}.hero-grid,.diagnostic-grid,.difference-grid{grid-template-columns:1fr}.cards,.plans-grid{grid-template-columns:1fr 1fr}.hero-panel{max-width:650px}}
 @media(max-width:700px){.nav{min-height:70px}.menu-toggle{display:block}.menu{display:none;position:absolute;top:70px;left:0;right:0;background:rgba(8,9,10,.98);padding:18px 5%;flex-direction:column;align-items:stretch;border-bottom:1px solid #222}.menu.open{display:flex}.nav-cta{text-align:center}.hero{padding:74px 0 78px}.hero-copy:after{top:17px}.section{padding:78px 0}h1{letter-spacing:-2.2px}.cards,.plans-grid,.process-grid,.footer-grid{grid-template-columns:1fr}.process-grid>div{border-right:0}.difference-grid{gap:36px}.hero-actions .btn{width:100%}.connection{gap:6px}.plan.popular,.plan.popular:hover{transform:none}.copyright{flex-direction:column;gap:5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.plan,.btn,.flow-node{transition:none}}
+.logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-brand {
+  display: block;
+  width: min(380px, 90%);
+  height: auto;
+  margin: 0 0 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .logo img {
+    width: 125px;
+  }
+
+  .hero-brand {
+    width: min(310px, 92%);
+    margin-bottom: 24px;
+  }
+}
