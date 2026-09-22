@@ -5,7 +5,7 @@
 .about-copy p{font-size:17px;line-height:1.75;color:var(--graphite);margin:0 auto 24px}
 .about-copy strong{font-weight:800}
 .about-partner{margin:34px auto 0;display:flex;flex-direction:column;align-items:center;gap:18px}
-.about-partner img{width:min(150px,42%);height:auto;display:block;object-fit:contain;border-radius:6px}
+.about-partner img{width:min(360px,88%);height:auto;display:block;object-fit:contain;border-radius:6px}
 .about-partner p{font-family:Georgia,serif;font-style:italic;font-weight:600;font-size:22px;line-height:1.35;color:#765f4d;max-width:620px;margin:0}
 @media(max-width:700px){
   .about-copy p{font-size:15px;line-height:1.7}
