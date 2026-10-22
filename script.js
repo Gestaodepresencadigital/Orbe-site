@@ -1,19 +1,22 @@
-const WHATSAPP_NUMBER = "5585974017539"; // TROQUE pelo número da empresa, com DDI + DDD, somente números.
+const WHATSAPP_NUMBER = "558586997179"; // DDI + DDD + número, somente dígitos.
 
-function whatsappUrl(type){
+function whatsappUrl(type) {
   const messages = {
-    diagnostico: "Olá! Vim pelo site da ORBE e gostaria de solicitar o diagnóstico gratuito da minha empresa.",
-    "fotos-arquivos": "Olá! Vim pelo site da ORBE e tenho interesse no serviço de Organização de Fotos e Arquivos.",
-    "whatsapp-business": "Olá! Vim pelo site da ORBE e tenho interesse na Otimização do WhatsApp Business.",
-    "google-maps": "Olá! Vim pelo site da ORBE e tenho interesse na Organização do Google / Google Maps.",
-    instagram: "Olá! Vim pelo site da ORBE e tenho interesse na Organização do Instagram.",
-    "links-canais": "Olá! Vim pelo site da ORBE e tenho interesse na Organização de Links e Canais.",
-    "catalogo-whatsapp": "Olá! Vim pelo site da ORBE e tenho interesse na Organização de Catálogo WhatsApp.",
-    "combo-whatsapp-google": "Olá! Vim pelo site da ORBE e tenho interesse no Combo WhatsApp Business + Google.",
-    "pacote-express": "Olá! Vim pelo site da ORBE e tenho interesse no Pacote Express.",
-    "plano-essencial": "Olá! Vim pelo site da ORBE e gostaria de saber mais sobre o Plano Essencial.",
-    "plano-estrategico": "Olá! Vim pelo site da ORBE e gostaria de saber mais sobre o Plano Estratégico."
+    diagnostico: "Olá, vim do site da Orbe e quero saber mais sobre o diagnóstico gratuito da minha empresa.",
+    "fotos-arquivos": "Olá, vim do site da Orbe e quero saber mais sobre o serviço de Organização de Fotos e Arquivos.",
+    "whatsapp-business": "Olá, vim do site da Orbe e quero saber mais sobre a Otimização do WhatsApp Business.",
+    "google-maps": "Olá, vim do site da Orbe e quero saber mais sobre a Organização do Google / Google Maps.",
+    instagram: "Olá, vim do site da Orbe e quero saber mais sobre a Organização do Instagram.",
+    "links-canais": "Olá, vim do site da Orbe e quero saber mais sobre a Organização de Links e Canais.",
+    "catalogo-whatsapp": "Olá, vim do site da Orbe e quero saber mais sobre a Organização de Catálogo no WhatsApp.",
+    "combo-whatsapp-google": "Olá, vim do site da Orbe e quero saber mais sobre o Combo WhatsApp Business + Google.",
+    "pacote-express": "Olá, vim do site da Orbe e quero saber mais sobre o Pacote Express.",
+    "plano-essencial": "Olá, vim do site da Orbe e quero saber mais sobre o Plano Essencial.",
+    "plano-profissional": "Olá, vim do site da Orbe e quero saber mais sobre o Plano Profissional.",
+    "plano-estrategico": "Olá, vim do site da Orbe e quero saber mais sobre o Plano Estratégico.",
+    "plano-express": "Olá, vim do site da Orbe e quero saber mais sobre os serviços pontuais do Plano Express."
   };
+
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messages[type] || messages.diagnostico)}`;
 }
 
