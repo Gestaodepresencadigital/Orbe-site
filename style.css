@@ -76,3 +76,34 @@
 .accompaniment-card .btn-outline{color:#fff;background:var(--graphite);border-color:var(--graphite)}
 .free-review-note{max-width:850px;margin:22px auto 0;padding:15px 18px;background:#f7f3ee;border:1px solid #ded2c7;border-radius:6px;color:var(--graphite);font-size:12px;text-align:left}
 @media(max-width:700px){.accompaniment{padding:60px 0 26px}.accompaniment-grid{grid-template-columns:1fr}.accompaniment-card{padding:25px 20px}.accompaniment-price{font-size:32px}}
+
+
+/* Padronização visual do acompanhamento com os cards dos planos */
+.accompaniment-card{
+  background:#171a1c;
+  border-color:#454c51;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(20,24,27,.14);
+}
+.accompaniment-label{color:#d5d9dc}
+.accompaniment-price{color:var(--orange)}
+.accompaniment-price span{color:#cbd0d3}
+.accompaniment-card>p:not(.accompaniment-label){color:#d5d9dc}
+.accompaniment-card li{color:#e4e7e9;border-bottom-color:#3f464b}
+.accompaniment-card .btn-outline{color:#fff;background:#24292d;border-color:#737a7f}
+.accompaniment-card .btn-outline:hover{background:#0e1113;border-color:#8c9398}
+.free-review-note{
+  max-width:850px;
+  margin:22px auto 0;
+  padding:20px 24px;
+  background:#d9dddf;
+  border:1px solid #b9bfc3;
+  border-left:4px solid var(--orange);
+  border-radius:7px;
+  color:var(--graphite);
+  font-size:12px;
+  line-height:1.7;
+  text-align:left;
+  box-shadow:0 8px 22px rgba(20,24,27,.06);
+}
+.free-review-note strong{color:#171a1c}
