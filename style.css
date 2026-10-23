@@ -46,3 +46,15 @@
   .express-list div{font-size:12px}
   .express-head h3{font-size:25px}
 }
+
+
+/* Valores e condições de pagamento dos planos */
+.price-total{font-size:clamp(32px,3vw,42px);letter-spacing:-1.4px;white-space:nowrap}
+.price-total sup{font-size:14px}
+.plan .price-pix{min-height:0!important;margin:-7px 0 7px!important;color:#fff!important;font-size:13px!important;font-weight:700}
+.plan .installment-note{min-height:0!important;margin:0 0 18px!important;color:#ffc18e!important;font-size:12px!important;line-height:1.45}
+.payment-options{max-width:850px;margin:34px auto 0;padding:28px 30px;background:#fff;border:1px solid var(--line);border-radius:8px;text-align:left}
+.payment-options h3{font-size:22px;margin:0 0 15px;text-align:center}
+.payment-options p{font-size:13px;color:var(--graphite);margin:8px 0}
+.payment-options .payment-disclaimer{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:15px}
+@media(max-width:700px){.price-total{font-size:clamp(30px,8vw,38px)}.payment-options{padding:23px 18px}}
